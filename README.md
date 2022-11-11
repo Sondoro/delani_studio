@@ -2,7 +2,7 @@
 delani_studio
 
 ## Project description.
-Create landing page for Delani Studio
+This is a web page for Delani studio that includes who they are, what they do, their project portfolio and a contact us page for customer feedback.
 
 ## Author(s) information.
 Simon Ondoro
@@ -20,7 +20,7 @@ As a user, I would like to;
 - Click on icons to toggle between the respective description of each icon. 
 - Hover over the Portfolio sections for a quick glance of the name of the project inside. 
 - See a responsive site.
-- Get a notification acknowledging receipt of my message when I contact the studio.
+- Be able to contact the studio via a contact us page and get a notification acknowledging receipt of my message.
 
 ## Technologies used.
 - HTML
