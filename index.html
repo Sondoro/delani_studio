@@ -8,6 +8,7 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@300&family=Lora:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
   
@@ -51,14 +52,12 @@
 
   <div class="what_we_do">
     <div class="row">
-      <h2>WHAT WE DO</h2>
-      
-      <br>
-      <br>
-
+    <h2>WHAT WE DO</h2>
+       <br>
+       <br>
         <div class="col-md-4">
-          <div id="design-icon">          
-            <img src="images/services_icons/design_icon.png" alt="">
+          <div id="design_icon">          
+            <img src="images/services_icons/design_icon.png" alt="Design Icon">
           </div>
 
           <div id="design">   
@@ -69,20 +68,29 @@
         </div>
       
         <div class="col-md-4">
-          <img src="images/services_icons/dev_icon.png" alt="">
-          <h5>DEVELOPMENT</h5>
-          <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.</p>
-          <p>They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
+          <div id="dev_icon">   
+            <img src="images/services_icons/dev_icon.png" alt="Development Icon">
+          </div>
+
+          <div id="development">  
+            <h5>DEVELOPMENT</h5>
+            <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.</p>
+            <p>They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
+          </div>
         </div>
 
         <div class="col-md-4">
-          <img src="images/services_icons/product_icon.png" alt="">
-          <h5>PRODUCT MANAGEMENT</h5>
-          <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live.</p>
-          <p>This iterative process allows for changes as business requirements evolve.</p>
-        </div>
+          <div id="product_icon">
+            <img src="images/services_icons/product_icon.png" alt="Product Management Icon">
+          </div>
 
-      </div>  
+          <div id="product">  
+            <h5>PRODUCT MANAGEMENT</h5>
+            <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live.</p>
+            <p>This iterative process allows for changes as business requirements evolve.</p>
+          </div>
+        </div> 
+    </div>  
   </div>
 
   <br>
@@ -92,17 +100,17 @@
     <div class="row" id="portfolio">
       
       <div class="col-md-3" id="work4">
-        <img src="images/portfolio/work4.jpg" alt="Project 1" />
-        <p id="overlay4" class="text">Black Canvas</p>
+        <img src="images/portfolio/work4.jpg" class="image" alt="Project 1" />
+        <p id="overlay4" class="text" style="display: none;">Black Canvas</p>
       </div>
       
       <div class="col-md-3" id="work3">
         <img src="images/portfolio/work3.jpg" alt="Project 2" />
-        <p id="overlay3" class="text">Mighty Ontario Security</p>
+        <p id="overlay3" class="text">Security</p>
       </div>
 
       <div class="col-md-3" id="work2">
-        <img src="images/portfolio/work2.jpg" alt="Project 3"
+        <img src="images/portfolio/work2.jpg" alt="Project 3"/>
         <p id="overlay2" class="text">The Prism</p>
       </div>
 
@@ -110,24 +118,29 @@
         <img src="images/portfolio/work1.jpg" alt="Project 4" />
         <p id="overlay" class="text">Dark Mode</p>
       </div>
-
     </div>
+    
+    <br>
+
     <div class="row" id="portfolio">
       <div class="col-md-3" id="work5">
         <img src="images/portfolio/work5.jpg" alt="Project 5" />
         <p id="overlay5" class="text">Daily Inspiration</p>
       </div>
+
       <div class="col-md-3" id="work6">
         <img src="images/portfolio/work6.jpg" alt="Project 6" />
         <p id="overlay6" class="text">WordPress</p>
       </div>
+
       <div class="col-md-3" id="work7">
         <img src="images/portfolio/work7.jpg" alt="Project 7" />
         <p id="overlay7" class="text">Logo</p>
       </div>
+
       <div class="col-md-3" id="work8">
         <img src="images/portfolio/work8.jpg" alt="Project 8" />
-        <p id="overlay8" class="text">Giraffe Restaurant</p>
+        <p id="overlay8" class="text">Giraffe</p>
       </div>
     </div>
   </div>
@@ -140,17 +153,39 @@
     <h2>CONTACT US</h2>
 
     <form id="customer_feedback" 
-    action="alert" name="customer_feedback" method="post" target="_top" autocomplete="on"> 
+    action="alert" 
+    name="customer_feedback" 
+    method="post" 
+    target="_top" 
+    autocomplete="on"> 
       
       <div class="form-group">
-        <input type="text" required placeholder="Name...">
 
-        <input type="email" required placeholder="Email...">
+        <input 
+          type="text" 
+          required 
+          placeholder="Name..."
+          name="Name"
+          id="Name">
+
+        <input 
+          type="email" 
+          required 
+          placeholder="Email..."
+          name="Email"
+          id="Email">
 
         <br>
         <br>
 
-        <textarea name="your_message" id="" cols="49" rows="8" placeholder="Your message here..." required></textarea>
+        <textarea 
+          name="your_message" 
+          id="feedback" 
+          cols="49" 
+          rows="8" 
+          placeholder="Your message here..." 
+          required>
+        </textarea>
 
         <br>
         <br>
