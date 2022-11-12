@@ -132,20 +132,17 @@
   <div class="contact_us">
     <h2>CONTACT US</h2>
 
-    <form action="pop_up" name="customer_feedback" method="post" target="_top" autocomplete="on"> 
+    <form action="alert" name="customer_feedback" method="post" target="_top" autocomplete="on"> 
       
       <div class="form-group">
-        <label for="">Name</label>
-        <input type="text">
+        <input type="text" required placeholder="Name...">
 
-        <label for="">Email</label>
-        <input type="email">
-      </div>
+        <input type="email" required placeholder="Email...">
 
-      <br>
+        <br>
+        <br>
 
-      <div class="form-group">
-        <textarea name="Your Message" id="" cols="30" rows="10"></textarea>
+        <textarea name="Your Message" id="" cols="49" rows="10" placeholder="Your message here..."></textarea>
       </div>
       
         <input type="submit">
