@@ -57,10 +57,15 @@
       <br>
 
         <div class="col-md-4">
-          <img src="images/services_icons/design_icon.png" alt="">
-          <h5>DESIGN</h5>
-          <p>Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.</p>
-          <p> Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
+          <div id="design-icon">          
+            <img src="images/services_icons/design_icon.png" alt="">
+          </div>
+
+          <div id="design">   
+            <h5>DESIGN</h5>
+            <p>Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.</p>
+            <p> Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
+          </div>
         </div>
       
         <div class="col-md-4">
@@ -98,7 +103,7 @@
 
       <div class="col-md-3" id="work2">
         <img src="images/portfolio/work2.jpg" alt="Project 3"
-        <p  id="overlay2" class="text">The Prism</p>
+        <p id="overlay2" class="text">The Prism</p>
       </div>
 
       <div class="col-md-3" id="work1">
@@ -134,7 +139,8 @@
     <br>
     <h2>CONTACT US</h2>
 
-    <form action="alert" name="customer_feedback" method="post" target="_top" autocomplete="on"> 
+    <form id="customer_feedback" 
+    action="alert" name="customer_feedback" method="post" target="_top" autocomplete="on"> 
       
       <div class="form-group">
         <input type="text" required placeholder="Name...">
@@ -144,7 +150,7 @@
         <br>
         <br>
 
-        <textarea name="Your Message" id="" cols="49" rows="8" placeholder="Your message here..." required></textarea>
+        <textarea name="your_message" id="" cols="49" rows="8" placeholder="Your message here..." required></textarea>
 
         <br>
         <br>
@@ -183,7 +189,6 @@
   <p>2022</p>
     
 </footer>
-
 
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
